@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Movie Trading Platform</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Movie Trading Platform</h1>
+        <p>Current Balance: <span id="currentBalance">$1000</span></p>
+    </div>
+    
+    <div class="main-container">
+        <div class="movie-details">
+            <div class="movie-info">
+                <img src="avengers.jpg" alt="Avengers: Endgame">
+                <h2>Movie: Avengers: Endgame</h2>
+                <p>Trailer Views: <span id="trailerViews">1,000,000</span></p>
+                <p>Current Price: <span id="moviePrice">$50</span></p>
+            </div>
+            <div class="trailer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="movie-summary">
+            <h2>Movie Summary</h2>
+            <p>Movie Name: <span id="movieName">Avengers: Endgame</span></p>
+            <p>Total Trailer Views: <span id="totalTrailerViews">1,000,000</span></p>
+            <p>Total Earnings: <span id="totalEarnings">$50</span></p>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="priceChart"></canvas>
+        </div>
+
+        <div class="actions">
+            <button onclick="buy()">Buy</button>
+            <button onclick="sell()">Sell</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
